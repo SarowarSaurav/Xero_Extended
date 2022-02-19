@@ -1,0 +1,505 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.shafi.notification_test"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->E:\odommoHack\intruder-alert-main\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->E:\odommoHack\intruder-alert-main\android\app\src\debug\AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-68
+15-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-65
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-79
+16-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-76
+17    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+17-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
+17-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-78
+18    <uses-permission android:name="android.permission.VIBRATE" />
+18-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-66
+18-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-63
+19    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+19-->[:flutter_local_notifications] E:\odommoHack\intruder-alert-main\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-81
+19-->[:flutter_local_notifications] E:\odommoHack\intruder-alert-main\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-78
+20    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+20-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\799f6a81ff5fb59a808a928f9e915a2a\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:25:5-82
+20-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\799f6a81ff5fb59a808a928f9e915a2a\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:25:22-79
+21    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Include required permissions for Advertising Id -->
+21-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4d67cdf06be562af1e3b14f6f7e02204\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:26:5-110
+21-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4d67cdf06be562af1e3b14f6f7e02204\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:26:22-107
+22    <uses-permission android:name="com.google.android.gms.permission.AD_ID" /> <!-- for android -->
+22-->[com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\72bcba41e2102d142a3bafeb9d17168a\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+22-->[com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\72bcba41e2102d142a3bafeb9d17168a\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:22-76
+23    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+24    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+25    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+26    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+27    <!-- for Samsung -->
+28    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+28-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:5-86
+28-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:19:22-83
+29    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+29-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:5-87
+29-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:20:22-84
+30    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+30-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:5-81
+30-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:23:22-78
+31    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+31-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:5-83
+31-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:24:22-80
+32    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+32-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:5-88
+32-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:27:22-85
+33    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+33-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:5-92
+33-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:28:22-89
+34    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+34-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:5-84
+34-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:31:22-81
+35    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+35-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:5-83
+35-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:34:22-80
+36    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+36-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:5-91
+36-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:37:22-88
+37    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+37-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:5-92
+37-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:38:22-89
+38    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+38-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:5-93
+38-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:39:22-90
+39    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+39-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:5-73
+39-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:42:22-70
+40    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+40-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:5-82
+40-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:45:22-79
+41    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+41-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:5-83
+41-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:46:22-80
+42    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+42-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:5-88
+42-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:49:22-85
+43    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+43-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:5-89
+43-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\User\.gradle\caches\transforms-2\files-2.1\83617d5b3e6fd5a3d2b55137a3206659\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:22-86
+44
+45    <application
+45-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:3:4-44:19
+46        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+46-->[androidx.core:core:1.7.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\1d638fb0d0a69c9c511453e04cb9a264\core-1.7.0\AndroidManifest.xml:24:18-86
+47        android:debuggable="true"
+48        android:icon="@mipmap/ic_launcher"
+48-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:5:9-43
+49        android:label="notification_test"
+49-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:4:9-42
+50        android:testOnly="true" >
+51        <activity
+51-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:6:9-38:20
+52            android:name="com.shafi.notification_test.MainActivity"
+52-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:7:13-41
+53            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+53-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:10:13-163
+54            android:hardwareAccelerated="true"
+54-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:11:13-47
+55            android:launchMode="singleTop"
+55-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:8:13-43
+56            android:theme="@style/LaunchTheme"
+56-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:9:13-47
+57            android:windowSoftInputMode="adjustResize" >
+57-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:12:13-55
+58
+59            <!--
+60                 Specifies an Android theme to apply to this Activity as soon as
+61                 the Android process has started. This theme is visible to the user
+62                 while the Flutter UI initializes. After that, this theme continues
+63                 to determine the Window background behind the Flutter UI.
+64            -->
+65            <meta-data
+65-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:17:13-20:17
+66                android:name="io.flutter.embedding.android.NormalTheme"
+66-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:18:15-70
+67                android:resource="@style/NormalTheme" />
+67-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:19:15-52
+68            <!--
+69                 Displays an Android View that continues showing the launch screen
+70                 Drawable until Flutter paints its first frame, then this splash
+71                 screen fades out. A splash screen is useful to avoid any visual
+72                 gap between the end of Android's launch screen and the painting of
+73                 Flutter's first frame.
+74            -->
+75            <meta-data
+75-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:26:13-29:17
+76                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+76-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:27:15-79
+77                android:resource="@drawable/launch_background" />
+77-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:28:15-61
+78
+79            <intent-filter>
+79-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:30:13-33:29
+80                <action android:name="android.intent.action.MAIN" />
+80-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:31:17-68
+80-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:31:25-66
+81
+82                <category android:name="android.intent.category.LAUNCHER" />
+82-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:32:17-76
+82-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:32:27-74
+83            </intent-filter>
+84            <intent-filter>
+84-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:34:13-37:29
+85                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+85-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:35:17-69
+85-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:35:25-66
+86
+87                <category android:name="android.intent.category.DEFAULT" />
+87-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:36:17-75
+87-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:36:27-73
+88            </intent-filter>
+89        </activity>
+90        <!--
+91             Don't delete the meta-data below.
+92             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+93        -->
+94        <meta-data
+94-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:41:9-43:33
+95            android:name="flutterEmbedding"
+95-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:42:13-44
+96            android:value="2" />
+96-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:43:13-30
+97
+98        <service
+98-->[:firebase_database] E:\odommoHack\intruder-alert-main\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+99            android:name="com.google.firebase.components.ComponentDiscoveryService"
+99-->[:firebase_database] E:\odommoHack\intruder-alert-main\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+100            android:directBootAware="true"
+100-->[com.google.firebase:firebase-common:20.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\245f1b766dee744d57b07a368f37da5b\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+101            android:exported="false" >
+101-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\799f6a81ff5fb59a808a928f9e915a2a\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:51:13-37
+102            <meta-data
+102-->[:firebase_database] E:\odommoHack\intruder-alert-main\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+103                android:name="com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar"
+103-->[:firebase_database] E:\odommoHack\intruder-alert-main\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-127
+104                android:value="com.google.firebase.components.ComponentRegistrar" />
+104-->[:firebase_database] E:\odommoHack\intruder-alert-main\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+105            <meta-data
+105-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:34:13-36:85
+106                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+106-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:35:17-128
+107                android:value="com.google.firebase.components.ComponentRegistrar" />
+107-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:36:17-82
+108            <meta-data
+108-->[:firebase_core] E:\odommoHack\intruder-alert-main\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+109                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+109-->[:firebase_core] E:\odommoHack\intruder-alert-main\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[:firebase_core] E:\odommoHack\intruder-alert-main\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+111            <meta-data
+111-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\799f6a81ff5fb59a808a928f9e915a2a\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:52:13-54:85
+112                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+112-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\799f6a81ff5fb59a808a928f9e915a2a\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:53:17-119
+113                android:value="com.google.firebase.components.ComponentRegistrar" />
+113-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\799f6a81ff5fb59a808a928f9e915a2a\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:54:17-82
+114            <meta-data
+114-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\5d9a9f9f7f7cb4cd33d151bc7b9ba2f6\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+115                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+115-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\5d9a9f9f7f7cb4cd33d151bc7b9ba2f6\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+116                android:value="com.google.firebase.components.ComponentRegistrar" />
+116-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\5d9a9f9f7f7cb4cd33d151bc7b9ba2f6\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+117            <meta-data
+117-->[com.google.firebase:firebase-database:20.0.3] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f30c4f6d312e6cc85f66d817ac95772f\jetified-firebase-database-20.0.3\AndroidManifest.xml:32:13-34:85
+118                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+118-->[com.google.firebase:firebase-database:20.0.3] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f30c4f6d312e6cc85f66d817ac95772f\jetified-firebase-database-20.0.3\AndroidManifest.xml:33:17-109
+119                android:value="com.google.firebase.components.ComponentRegistrar" />
+119-->[com.google.firebase:firebase-database:20.0.3] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f30c4f6d312e6cc85f66d817ac95772f\jetified-firebase-database-20.0.3\AndroidManifest.xml:34:17-82
+120            <meta-data
+120-->[com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\5f8918c5a231ceaf01512ba04f25c9ab\jetified-play-services-measurement-api-20.0.2\AndroidManifest.xml:30:13-32:85
+121                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+121-->[com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\5f8918c5a231ceaf01512ba04f25c9ab\jetified-play-services-measurement-api-20.0.2\AndroidManifest.xml:31:17-139
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\5f8918c5a231ceaf01512ba04f25c9ab\jetified-play-services-measurement-api-20.0.2\AndroidManifest.xml:32:17-82
+123            <meta-data
+123-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b646a1c3488e0fa90dc6654323ab235e\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+124                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+124-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b646a1c3488e0fa90dc6654323ab235e\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\b646a1c3488e0fa90dc6654323ab235e\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+126        </service>
+127        <service
+127-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-15:72
+128            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+128-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-107
+129            android:exported="false"
+129-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+130            android:permission="android.permission.BIND_JOB_SERVICE" />
+130-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-69
+131        <service
+131-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-22:19
+132            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+132-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-97
+133            android:exported="false" >
+133-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+134            <intent-filter>
+134-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-21:29
+135                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+135-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-78
+135-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:25-75
+136            </intent-filter>
+137        </service>
+138
+139        <receiver
+139-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-31:20
+140            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+140-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-98
+141            android:exported="true"
+141-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-36
+142            android:permission="com.google.android.c2dm.permission.SEND" >
+142-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-73
+143            <intent-filter>
+143-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-30:29
+144                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+144-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:17-81
+144-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:25-78
+145            </intent-filter>
+146        </receiver>
+147
+148        <provider
+148-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:39:9-43:38
+149            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+149-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-102
+150            android:authorities="com.shafi.notification_test.flutterfirebasemessaginginitprovider"
+150-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-88
+151            android:exported="false"
+151-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-37
+152            android:initOrder="99" />
+152-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-35
+153
+154        <receiver
+154-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-13:40
+155            android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.DismissedNotificationReceiver"
+155-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-121
+156            android:exported="false" />
+156-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-37
+157        <receiver
+157-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-16:40
+158            android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.ScheduledNotificationReceiver"
+158-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-121
+159            android:exported="false" />
+159-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-37
+160        <receiver
+160-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-19:40
+161            android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.KeepOnTopActionReceiver"
+161-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-115
+162            android:exported="false" />
+162-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-37
+163        <receiver
+163-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:20:9-33:20
+164            android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.RefreshSchedulesReceiver"
+164-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-116
+165            android:exported="false" >
+165-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-37
+166            <intent-filter>
+166-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-32:29
+167                <category android:name="android.intent.category.DEFAULT" />
+167-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:36:17-75
+167-->E:\odommoHack\intruder-alert-main\android\app\src\main\AndroidManifest.xml:36:27-73
+168
+169                <action android:name="android.intent.action.BOOT_COMPLETED" />
+169-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:26:17-79
+169-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:26:25-76
+170                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+170-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:27:17-86
+170-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:27:25-83
+171                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+171-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:28:17-84
+171-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:28:25-81
+172                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+172-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:29:17-82
+172-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:29:25-79
+173                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+173-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:30:17-82
+173-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:30:25-79
+174                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+174-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:31:17-107
+174-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:31:25-104
+175            </intent-filter>
+176        </receiver>
+177        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
+177-->[:flutter_local_notifications] E:\odommoHack\intruder-alert-main\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-106
+177-->[:flutter_local_notifications] E:\odommoHack\intruder-alert-main\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:19-103
+178        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver" >
+178-->[:flutter_local_notifications] E:\odommoHack\intruder-alert-main\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-20:20
+178-->[:flutter_local_notifications] E:\odommoHack\intruder-alert-main\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:19-107
+179            <intent-filter>
+179-->[:flutter_local_notifications] E:\odommoHack\intruder-alert-main\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-19:29
+180                <action android:name="android.intent.action.BOOT_COMPLETED" />
+180-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:26:17-79
+180-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:26:25-76
+181                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+181-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:28:17-84
+181-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:28:25-81
+182                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+182-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:29:17-82
+182-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:29:25-79
+183                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+183-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:30:17-82
+183-->[:awesome_notifications] E:\odommoHack\intruder-alert-main\build\awesome_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:30:25-79
+184            </intent-filter>
+185        </receiver>
+186
+187        <uses-library
+187-->[androidx.window:window:1.0.0-beta04] C:\Users\User\.gradle\caches\transforms-2\files-2.1\a5f385ef45530604007d550e11076bc8\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+188            android:name="androidx.window.extensions"
+188-->[androidx.window:window:1.0.0-beta04] C:\Users\User\.gradle\caches\transforms-2\files-2.1\a5f385ef45530604007d550e11076bc8\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+189            android:required="false" />
+189-->[androidx.window:window:1.0.0-beta04] C:\Users\User\.gradle\caches\transforms-2\files-2.1\a5f385ef45530604007d550e11076bc8\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+190        <uses-library
+190-->[androidx.window:window:1.0.0-beta04] C:\Users\User\.gradle\caches\transforms-2\files-2.1\a5f385ef45530604007d550e11076bc8\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+191            android:name="androidx.window.sidecar"
+191-->[androidx.window:window:1.0.0-beta04] C:\Users\User\.gradle\caches\transforms-2\files-2.1\a5f385ef45530604007d550e11076bc8\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+192            android:required="false" />
+192-->[androidx.window:window:1.0.0-beta04] C:\Users\User\.gradle\caches\transforms-2\files-2.1\a5f385ef45530604007d550e11076bc8\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+193
+194        <receiver
+194-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\799f6a81ff5fb59a808a928f9e915a2a\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:28:9-35:20
+195            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+195-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\799f6a81ff5fb59a808a928f9e915a2a\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:29:13-78
+196            android:exported="true"
+196-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\799f6a81ff5fb59a808a928f9e915a2a\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:30:13-36
+197            android:permission="com.google.android.c2dm.permission.SEND" >
+197-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\799f6a81ff5fb59a808a928f9e915a2a\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:31:13-73
+198            <intent-filter>
+198-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-30:29
+199                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+199-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:17-81
+199-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:25-78
+200            </intent-filter>
+201        </receiver>
+202        <!--
+203             FirebaseMessagingService performs security checks at runtime,
+204             but set to not exported to explicitly avoid allowing another app to call it.
+205        -->
+206        <service
+206-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\799f6a81ff5fb59a808a928f9e915a2a\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:41:9-48:19
+207            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+207-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\799f6a81ff5fb59a808a928f9e915a2a\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:42:13-82
+208            android:directBootAware="true"
+208-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\799f6a81ff5fb59a808a928f9e915a2a\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:43:13-43
+209            android:exported="false" >
+209-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\799f6a81ff5fb59a808a928f9e915a2a\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:44:13-37
+210            <intent-filter android:priority="-500" >
+210-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-21:29
+211                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+211-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-78
+211-->[:firebase_messaging] E:\odommoHack\intruder-alert-main\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:25-75
+212            </intent-filter>
+213        </service>
+214        <service
+214-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\87fda7b5538c24706f291679ca38114e\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+215            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+215-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\87fda7b5538c24706f291679ca38114e\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+216            android:exported="false" >
+216-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\87fda7b5538c24706f291679ca38114e\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+217            <meta-data
+217-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\87fda7b5538c24706f291679ca38114e\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+218                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+218-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\87fda7b5538c24706f291679ca38114e\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+219                android:value="cct" />
+219-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\87fda7b5538c24706f291679ca38114e\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+220        </service>
+221
+222        <provider
+222-->[com.google.firebase:firebase-common:20.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\245f1b766dee744d57b07a368f37da5b\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+223            android:name="com.google.firebase.provider.FirebaseInitProvider"
+223-->[com.google.firebase:firebase-common:20.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\245f1b766dee744d57b07a368f37da5b\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+224            android:authorities="com.shafi.notification_test.firebaseinitprovider"
+224-->[com.google.firebase:firebase-common:20.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\245f1b766dee744d57b07a368f37da5b\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+225            android:directBootAware="true"
+225-->[com.google.firebase:firebase-common:20.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\245f1b766dee744d57b07a368f37da5b\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+226            android:exported="false"
+226-->[com.google.firebase:firebase-common:20.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\245f1b766dee744d57b07a368f37da5b\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+227            android:initOrder="100" />
+227-->[com.google.firebase:firebase-common:20.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\245f1b766dee744d57b07a368f37da5b\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+228
+229        <receiver
+229-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4d67cdf06be562af1e3b14f6f7e02204\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:29:9-33:20
+230            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+230-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4d67cdf06be562af1e3b14f6f7e02204\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:30:13-85
+231            android:enabled="true"
+231-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4d67cdf06be562af1e3b14f6f7e02204\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:31:13-35
+232            android:exported="false" >
+232-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4d67cdf06be562af1e3b14f6f7e02204\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:32:13-37
+233        </receiver>
+234
+235        <service
+235-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4d67cdf06be562af1e3b14f6f7e02204\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:35:9-38:40
+236            android:name="com.google.android.gms.measurement.AppMeasurementService"
+236-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4d67cdf06be562af1e3b14f6f7e02204\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:36:13-84
+237            android:enabled="true"
+237-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4d67cdf06be562af1e3b14f6f7e02204\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:37:13-35
+238            android:exported="false" />
+238-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4d67cdf06be562af1e3b14f6f7e02204\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:38:13-37
+239        <service
+239-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4d67cdf06be562af1e3b14f6f7e02204\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:39:9-43:72
+240            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+240-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4d67cdf06be562af1e3b14f6f7e02204\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:40:13-87
+241            android:enabled="true"
+241-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4d67cdf06be562af1e3b14f6f7e02204\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:41:13-35
+242            android:exported="false"
+242-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4d67cdf06be562af1e3b14f6f7e02204\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:42:13-37
+243            android:permission="android.permission.BIND_JOB_SERVICE" />
+243-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\User\.gradle\caches\transforms-2\files-2.1\4d67cdf06be562af1e3b14f6f7e02204\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:43:13-69
+244
+245        <activity
+245-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f58498a3641a0b4078db8eb0d24ddce5\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+246            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+246-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f58498a3641a0b4078db8eb0d24ddce5\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+247            android:exported="false"
+247-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f58498a3641a0b4078db8eb0d24ddce5\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+248            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+248-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f58498a3641a0b4078db8eb0d24ddce5\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+249
+250        <meta-data
+250-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\5abb6b57d6ccb1f3e678a4fbc9e41fff\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+251            android:name="com.google.android.gms.version"
+251-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\5abb6b57d6ccb1f3e678a4fbc9e41fff\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+252            android:value="@integer/google_play_services_version" />
+252-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\5abb6b57d6ccb1f3e678a4fbc9e41fff\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+253
+254        <service
+254-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\1120f9cda02dad060005f0355faabf19\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+255            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+255-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\1120f9cda02dad060005f0355faabf19\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+256            android:exported="false"
+256-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\1120f9cda02dad060005f0355faabf19\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+257            android:permission="android.permission.BIND_JOB_SERVICE" >
+257-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\1120f9cda02dad060005f0355faabf19\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+258        </service>
+259
+260        <receiver
+260-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\1120f9cda02dad060005f0355faabf19\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+261            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+261-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\1120f9cda02dad060005f0355faabf19\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+262            android:exported="false" />
+262-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\1120f9cda02dad060005f0355faabf19\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+263
+264        <provider
+264-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f8f977eba70a0d34f2b34d422ee67847\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+265            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+265-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f8f977eba70a0d34f2b34d422ee67847\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+266            android:authorities="com.shafi.notification_test.lifecycle-process"
+266-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f8f977eba70a0d34f2b34d422ee67847\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+267            android:exported="false"
+267-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f8f977eba70a0d34f2b34d422ee67847\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+268            android:multiprocess="true" />
+268-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\User\.gradle\caches\transforms-2\files-2.1\f8f977eba70a0d34f2b34d422ee67847\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+269    </application>
+270
+271</manifest>

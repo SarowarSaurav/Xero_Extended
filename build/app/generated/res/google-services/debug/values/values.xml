@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">274920108123-48tfh66v5opehifjcbecurg75a149rfd.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://thesis-faa00-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">274920108123</string>
+    <string name="google_api_key" translatable="false">AIzaSyARVKT4RQpBsmy0WpF1Fm9V3B_THFyt2CI</string>
+    <string name="google_app_id" translatable="false">1:274920108123:android:680348a0bee055db8d0f7e</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyARVKT4RQpBsmy0WpF1Fm9V3B_THFyt2CI</string>
+    <string name="google_storage_bucket" translatable="false">thesis-faa00.appspot.com</string>
+    <string name="project_id" translatable="false">thesis-faa00</string>
+</resources>

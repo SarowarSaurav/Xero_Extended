@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/shafi/notification_test/BuildConfig.java
+ com.shafi.notification_test.BuildConfig

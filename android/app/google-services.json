@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "274920108123",
+    "firebase_url": "https://thesis-faa00-default-rtdb.firebaseio.com",
+    "project_id": "thesis-faa00",
+    "storage_bucket": "thesis-faa00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274920108123:android:46aa6a5ca4c37a388d0f7e",
+        "android_client_info": {
+          "package_name": "com.shafi.notification_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274920108123-48tfh66v5opehifjcbecurg75a149rfd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARVKT4RQpBsmy0WpF1Fm9V3B_THFyt2CI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274920108123-48tfh66v5opehifjcbecurg75a149rfd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
